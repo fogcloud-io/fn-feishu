@@ -30,6 +30,7 @@ func Handler(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, "ioutil.ReadAll: "+err.Error(), http.StatusInternalServerError)
 		return
 	}
+
 	msg := FeishuMsg{
 		MsgType: "text",
 		Text: struct {

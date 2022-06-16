@@ -17,5 +17,6 @@ then
     cp ${SRC_PKG} ${srcDir}/function.go
 fi
 
+
 cd ${srcDir}
 GOPROXY="https://goproxy.cn,direct" go build -buildmode=plugin -i -o ${DEPLOY_PKG} .
